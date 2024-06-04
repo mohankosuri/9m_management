@@ -1,27 +1,276 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.Navitems {
+  @apply hover:text-red-500 transition duration-300 font-bold text-sm font-sans md:font-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.navbar1 {
+  @apply bg-white h-20 w-screen text-black flex justify-center items-center space-x-4; 
+}
+.footer1{
+    @apply p-10 bg-neutral text-white
+}
+.footer-paragraph{
+    @apply w-[250px] pb-4 pt-3
+}
+.footer-title{
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+@media (hover:hover) {
+  .link-hover:hover {
+      text-decoration-line: underline;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.link-hover {
+  text-decoration-line: none;
+}
+.footer-social{
+  @apply grid grid-flow-row gap-6 ml-6
+} 
+/* .course-div{
+  @apply p-2
+} */
+.course-container{
+  @apply container mx-auto text-center
+}
+.course-heading{
+  @apply font-bold text-red-500 text-lg mb-2
+}
+.course-content{
+  @apply text-4xl font-bold ml-10 mb-3
+}
+.course-paragraph{
+  @apply text-xl text-gray-700 mx-[260px] 
+}
+.course-div2{
+  @apply px-[100px]
+}
+.course-sub-container{
+  @apply container mx-auto mt-4
+}
+.course-data{
+  @apply flex flex-wrap -mx-4
+}
+.relative-course{
+  @apply relative
+}
+.certificate-heading{
+  @apply font-bold text-red-500 text-lg mb-3
+}
+/* .certificate-heading2{
+  @apply text-3xl font-bold text-center mb-5 mx-[350px]
+} */
+/* .certificate-description{
+ @apply text-xl text-gray-700 mx-[250px]
+} */
+ 
+ 
+ 
+ 
+.employee-container{
+  @apply mt-6
+}
+ 
+ 
+.h-scroll-container{
+  @apply w-screen flex flex-row bg-orange-50 m-auto text-center
+}
+.h-scroll-animation{
+  @apply flex animate-scrolling-text m-auto text-center
+}
+.h-scroll-div{
+  @apply w-1/5 m-auto p-4 cursor-pointer
+}
+.h-scroll-div2{
+  @apply rounded-lg shadow-lg p-6 h-[140px] flex flex-col
+}
+/* .h-scroll-div{
+  @apply inline-block text-lg font-bold text-black px-4 text-center mt-10 m-5
+}
+.h-scroll-h1{
+  @apply font-bold text-3xl 
+} */
+/* .h-scroll-p{
+  @apply text-sm text-center
+} */
+/* .h-scroll-smile{
+  @apply inline-block text-lg font-bold text-black px-4 m-5
+} */
+/* .h-scroll-smile-heading{
+  @apply font-mono font-bold text-5xl
+} */
+/* .h-scroll-newwave-div{
+  @apply inline-block text-lg font-bold text-black px-4 mt-6 m-5
+} */
+.Top-heading{
+  @apply font-bold text-red-500 text-lg mb-4
+}
+.second-heading{
+  @apply text-4xl font-bold ml-10 m-10 mt-1 font-serif
+}
+.n-and-b-data-container{
+  @apply container mx-auto mt-2 h-screen
+}
+.nb-card-background-color{
+  @apply bg-white rounded-3xl shadow-lg p-6 h-[400px] flex flex-col
+}
+.nb-item-name{
+  @apply font-bold text-lg  text-gray-400
+}
+.nb-item-content{
+  @apply mt-1 font-bold text-lg
+}
+.nb-date{
+  @apply flex ml-2
+}
+.online-education-container{
+  @apply container mx-auto  relative h-screen w-full
+}
+.online-education-image{
+  @apply h-4/5 w-full
+}
+.online-education-text-div{
+  @apply absolute top-0 left-0 text-black bg-opacity-50 p-4 mt-[100px] ml-[50px]
+}
+.online-education-heading{
+  @apply text-4xl font-bold font-mono w-[600px] text-black
+}
+/* .online-education-description{
+  @apply my-8 w-[500px] font-mono font-bold text-lg
+} */
+.join-for-free-btn{
+  @apply bg-blue-900 mt-5 text-white content-center px-9 py-3 rounded-md
+}
+.online-learning-container{
+  @apply flex flex-wrap mx-10 my-16 rounded-lg mt-14 mb-14 
+} 
+.online-learning-width{
+  @apply w-full md:w-1/2 p-1
+}
+/* .online-learning-width1{
+  @apply w-full md:w-1/2 p-1 ml-[200px]
+} */
+.online-learning-text-center{
+  @apply text-center md:text-left
+}
+.online-learning-main-heading{
+  @apply text-red-500 ml-10 font-semibold text-lg font-mono
+}
+.online-learning-sub-heading{
+  @apply text-xl font-extrabold ml-10 mb-4 mt-10 font-sans
+}
+.online-learning-description{
+  @apply text-lg ml-10
+}
+.view-all-courses-btn{
+  @apply bg-red-500 text-white text-lg content-center px-6 py-2 rounded-md mt-6 ml-10
+}
+.online-learning-content{
+  @apply ml-10 text-lg text-gray-600 mt-6
+}
+.popular-course-icon-div{
+  @apply flex mt-6 
+}
+.profile-icon{
+  @apply mt-1 text-lg h-6 w-6
+}
+.profile-name{
+  @apply font-bold text-lg ml-4 text-red-500
+}
+.profile-content{
+  @apply mt-4 font-bold text-lg hover:text-red-500
+}
+.layout-icon{
+  @apply mt-1 text-red-600 h-5 w-5
+}
+.layout-icon-div{
+  @apply flex justify-between mt-4
+}
+.persons-icon{
+  @apply mt-1 text-red-600 h-5 w-5
+}
+.popular-courses-descriptionn{
+  @apply text-xl text-gray-700 mx-[150px] mt-7 mb-7
+}
+.register-span-text{
+  @apply text-red-500 font-bold
+}
+.self-development-container{
+  @apply flex flex-wrap bg-gray-100 rounded-lg mt-8 mb-8
+}
+.self-development-div{
+  @apply w-full md:w-2/3 p-4
+}
+.self-development-div2{
+  @apply text-center md:text-left mt-10
+}
+.self-development-span{
+  @apply text-black  font-bold text-2xl font-sans ml-[100px]
+}
+.self-development-h2{
+  @apply text-2xl text-slate-700 font-bold ml-[100px] mb-4 mt-4 font-sans
+}
+.self-development-p{
+  @apply text-lg mx-[100px]
+}
+.self-development-img{
+  @apply w-full md:w-1/3 p-4
+}
+.get-start-btn{
+  @apply bg-red-500 text-white text-lg content-center px-6 py-2 rounded-md mt-6 ml-[100px]
+}
+.subscribe-main-heading{
+  @apply font-bold font-sans text-red-500 text-lg mb-8
+}
+.subscribe-heading-span{
+  @apply text-4xl font-bold font-serif mt-8
+}
+.default-btn-div{
+  @apply absolute ml-[416px]
+}
+.subscribe-description{
+  @apply flex content-center justify-center mt-8 mx-[300px]
+}
+.subscribe-now-btn-div{
+  @apply flex justify-center content-center mt-[50px]
+}
+.subscribe-now-btn{
+  @apply bg-red-500 text-white py-3 hover:bg-red-400
+} 
+.input-field{
+  @apply w-[550px] mb-4
+}
+ 
+.cards-contentt{
+  @apply mt-4
+}
+ 
+ 
+ 
+.clients-heading{
+  @apply font-extrabold text-2xl text-center mt-10
+}
+.clients-heading2{
+  @apply font-extrabold text-xl text-center mt-3 mb-4
+}
+.clients-img{
+  @apply h-20 w-20
+}
+.products-div{
+  @apply flex flex-row justify-between bg-slate-100 rounded-lg p-8 m-8
+}
+.products-cards-div{
+  @apply w-1/4 p-4 cursor-pointer
+}
+.product-cards{
+  @apply bg-white rounded-lg shadow-lg p-6 h-[400px] flex flex-col items-center
+}
+.product-img-background{
+  @apply bg-slate-200 rounded-full h-28 w-28 hover:rotate-180 flex items-center justify-center
+}
+.product-content-div{
+  @apply mt-4 text-center
 }

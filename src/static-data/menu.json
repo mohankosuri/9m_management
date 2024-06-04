@@ -1,0 +1,42 @@
+{
+"menu":[
+    {
+        "id":1,
+        "name":"Home",
+        "link":"/"
+    },
+    {
+        "id":2,
+        "name":"Products",
+        "link":"product"
+        
+    },
+    
+    
+    {
+        "id":3,
+        "name":"Quality Assurance",
+        "link":"qualityassurance"
+        
+    },
+    {
+        "id":4,
+        "name":"About us",
+        "link":"about"
+    },
+
+    {
+        "id":5,
+        "name":"Career",
+        "link":"career"
+        
+    },
+    {
+        "id":6,
+        "name":"Contact",
+        "link":"contact"
+    }
+]
+}
+
+
